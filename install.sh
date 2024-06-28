@@ -8,6 +8,10 @@ mkdir -p "$INSTALL_DIR"
 cp -v capture-card/launch_capture_card.sh "$INSTALL_DIR"
 chmod +x "$INSTALL_DIR/launch_capture_card.sh"
 
+cp -v capture-card/set_capture_card_defaults.sh "$INSTALL_DIR"
+chmod +x "$INSTALL_DIR/set_capture_card_defaults.sh"
+sudo cp -v capture-card/99-capture-card.rules /etc/udev/rules.d/
+
 cp -v screenshot/rescale.sh "$INSTALL_DIR"
 chmod +x "$INSTALL_DIR/rescale.sh"
 
